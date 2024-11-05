@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+</html><head>
+    <title> Contoh implementasi Javascript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        
+        }
+
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Datang di Halaman Jaavascript</h1>
+    <p>Masukkan Nama Anda</p>
+    <input type="text" id="namaInput" placeholder="Nama Anda">
+    <button id="greetbutton">Sapa Saya!</button>
+
+    <div id="message"></div>
+
+    <script>
+        
+        greetbutton.addEventListener("click", function () {
+            
+            const nama = namaInput.value;
+            if (nama) {
+                message.innerText = "Halo, " + nama + "! Selamat Datang !";
+            } 
+
+            else {
+                message.innerText = " Silahkan Masukkan Nama Anda,";
+            }
+        })
+    </script>
+</body>
